@@ -97,6 +97,7 @@ public class UIItem
     public List<ColumnItem> MainColumnItem { get; set; }
     public List<WindowSizeItem> WindowSizeItem { get; set; }
     public bool HideColumnIpInfo { get; set; }
+    public int? FrozenColumnCount { get; set; }
 }
 
 public class ConstItem
@@ -137,6 +138,7 @@ public class TunModeItem
     public bool EnableIPv6Address { get; set; }
     public string IcmpRouting { get; set; }
     public bool EnableLegacyProtect { get; set; } = true;
+    public string? DnsMode { get; set; }
     public List<string>? RouteExcludeAddress { get; set; }
     public string IPv4Address { get; set; }
     public string IPv6Address { get; set; }
